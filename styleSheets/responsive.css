@@ -1,0 +1,47 @@
+@media only screen and (max-width : 1224px) {
+
+    .footer {
+        gap: 5rem;
+        margin-top: 5rem;
+    }
+
+    .footer__main {
+        margin-top: 20%;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    ;
+}
+
+@media only screen and (max-width : 1024px) {
+    /* body {
+        background-color: red;
+    } */
+
+    .header {
+        justify-content: center;
+        gap: 0;
+    }
+
+    .footer {
+        gap: 2rem;
+        margin-top: 0;
+    }
+
+    .about-us {
+        gap: 20px;
+    }
+
+    .footer__main {
+        margin-top: 30%;
+    }
+
+    .about-us {
+        width: 80vw;
+    }
+
+    ;
+}
