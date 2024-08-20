@@ -8,11 +8,16 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     line-height: 24px;
+    width: 100%;
     overflow-x: hidden;
 }
 
@@ -34,8 +39,22 @@ ul {
     list-style-type: none;
 }
 
+/* other class */
+
+.hidden {
+    display: none !important;
+}
+
+.exit {
+    cursor: pointer;
+}
+
 .active-button {
     color: #41487F;
+}
+
+.active-button>a {
+    font-weight: 600;
 }
 
 .des {
@@ -49,7 +68,7 @@ ul {
 
 .page-cover {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -62,10 +81,22 @@ ul {
     padding: 14px 40px;
     width: fit-content;
     text-align: center;
-    min-width: none;
+    min-width: 150px;
+    border: 2px solid #FF64AE;
+    cursor: pointer;
 }
 
 .pink-button>a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.pink-button>button {
+    background-color: transparent;
+    outline: none;
+    border: none;
     font-size: 16px;
     line-height: 24px;
     color: #fff !important;
@@ -96,11 +127,15 @@ ul {
     align-items: center;
 }
 
-.home-button {
+.main-menu .home-button {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+.main-menu .home-button a {
+    color: #41487F !important;
 }
 
 .main-logo {
@@ -127,6 +162,7 @@ ul {
     line-height: 24px;
     letter-spacing: 1.75px;
     cursor: pointer;
+    color: #000;
 }
 
 .main-menu>li {
@@ -550,7 +586,7 @@ ul {
     min-width: 50rem;
     position: relative;
     /* margin: 0; */
-    margin-top: 10rem;
+    margin-top: 15rem;
     gap: 10rem;
     /*  */
 }
@@ -563,7 +599,7 @@ ul {
 .footer__bg {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     justify-content: flex-end;
     position: absolute;
     bottom: 0;
@@ -591,6 +627,7 @@ ul {
 
 .footer__contact .main-logo {
     justify-content: flex-start;
+    margin-bottom: 30px;
 }
 
 .footer__contact p {
@@ -602,6 +639,12 @@ ul {
     flex-direction: row;
     justify-content: flex-start;
     gap: 20px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .footer-section h5 {
@@ -655,4 +698,30 @@ ul {
 .credit {
     /* z-index: ; */
     color: #fff;
+}
+
+#open-menu-button {
+    display: none;
+}
+
+#exit {
+    display: none;
+}
+
+/* hover */
+
+.main-menu>li>a:hover {
+    color: #41487F;
+    transition: all 0.3s;
+}
+
+.pink-button:hover>a,
+.pink-button:hover>button {
+    color: #FF64AE !important;
+    transition: all 0.3s;
+}
+
+.pink-button:hover {
+    background-color: #fff;
+    transition: all 0.3s;
 }

@@ -7,29 +7,38 @@
     <title>Exercise</title>
     <link rel="stylesheet" type="text/css" href="./styleSheets/style.css" />
     <link rel="stylesheet" type="text/css" href="./styleSheets/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="page-cover">
+        <div class="blur"></div>
         <div class="header-cover">
             <header class="header">
-                <div class="main-logo">
+                <a class="main-logo" href="#">
                     <img src="./assets/mainLogo.png" />
-                </div>
+                </a>
 
                 <div class="navigation">
+
+                    <div class="pink-button" id="open-menu-button">
+                        <a href="#">Menu</a>
+                    </div>
+
                     <ul class="main-menu">
-                        <li class="home-button"><a class="active-button">Home</a><ion-icon
+                        <li class="home-button active-button"><a class="">Home</a><ion-icon
                                 name="add-outline"></ion-icon></li>
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Service</a></li>
-                        <li><a>Gallery</a></li>
-                        <li><a>Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li id="exit"><a href=""><i class="fa-solid fa-circle-xmark"></i></a></li>
                     </ul>
 
                     <div class="contact-button pink-button">
-                        <a>Contact</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
             </header>
@@ -39,7 +48,7 @@
                     <h1>Clinic & beauty consultant</h1>
                     <p>It is a long established fact that a reader will be by the readable content of a page.</p>
                     <div class="pink-button more-details-button">
-                        <a href="">More details</a>
+                        <a href="#core-service">More details</a>
                     </div>
                 </div>
 
@@ -55,7 +64,7 @@
             </div>
         </div>
 
-        <div class="core-service">
+        <div class="core-service" id="core-service">
             <div class="core-service__intro">
                 <p class="title">Main Services</p>
                 <h2>Learn services to focus <br> on your beauty</h2>
@@ -181,7 +190,7 @@
             </div>
         </div>
 
-        <div class="contact-info">
+        <div class="contact-info" id="contact">
             <div class="contact-info__bg">
                 <img src="./assets/BackgroundBubble2.png" alt="">
             </div>
@@ -217,8 +226,10 @@
                         <textarea name="" id="" heght="" placeholder="Your injury here"></textarea>
                     </div>
 
-                    <div class="pink-button">
-                        <a href="">Send Message</a>
+                    <div class="grid-item full-width">
+                        <div class="pink-button">
+                            <button type="submit">Send Message</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,7 +243,7 @@
             <div class="footer__main">
                 <div class="footer__contact">
                     <div class="main-logo">
-                        <img src="./assets/mainLogo.png" />
+                        <img src="./assets/mainLogo2.png" />
                     </div>
 
                     <p><b>Beautice</b> is a Beauty Clinic WordPress Theme.</p>
@@ -267,11 +278,11 @@
 
             <div class="extra">
                 <div class="social">
-                    <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
-                    <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
 
                 <div class="credit">
@@ -279,12 +290,16 @@
                 </div>
             </div>
         </div>
+
     </div>
 
+    <div class="back-to-start">
 
+    </div>
 </body>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./script/main.js"></script>
 
 </html>
