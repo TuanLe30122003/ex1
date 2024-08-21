@@ -39,12 +39,15 @@ ul {
     list-style-type: none;
 }
 
-.page-cover {}
+.page-cover {
+    width: 100%;
+}
 
 /* Header */
 
 .header-cover {
-    width: 1286.5px;
+    /* width: 1286.5px; */
+    width: 100%;
     height: 805px;
     background-image: url('../assets/introBG.png');
     background-size: auto;
@@ -136,6 +139,7 @@ ul {
     margin-top: 202px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .main-slider__intro {}
@@ -296,8 +300,8 @@ ul {
     background-position-y: top;
     background-size: auto;
     background-repeat: no-repeat;
-    width: 1291.15px;
-    /* width: 100%; */
+    /* width: 1291.15px; */
+    width: 100%;
     height: 1028.89px;
     margin-left: 150px;
     margin-top: -220px;
@@ -404,10 +408,12 @@ ul {
     flex-direction: column;
     align-items: center;
     margin-top: -120px;
+    transform: translateX(25px);
 }
 
 .expert .title-and-des {
     text-align: center;
+    /* margin-left: 45px; */
 }
 
 .expert .title-and-des h2 {
@@ -551,7 +557,7 @@ ul {
 
 .contact-info__img {
     margin-left: 150px;
-    margin-top: 274px;
+    /* margin-top: 14px; */
 }
 
 .grid-item {
@@ -602,29 +608,19 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     min-height: 50rem;
     min-width: 50rem;
     position: relative;
     margin-top: -180px;
     gap: 10rem;
+    background: url('../assets/BottomBG.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: right;
     /*  */
-}
-
-.footer__bg img {
-    /* height: 100%; */
-    width: 1440px;
-}
-
-.footer__bg {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    justify-content: flex-end;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
 }
 
 .footer__main {
@@ -731,7 +727,7 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 46px;
-    margin-left: 60px;
+    margin-left: 10px;
 }
 
 .social a {
@@ -747,10 +743,9 @@ ul {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    gap: 420px;
-    width: 85%;
-    margin-top: -20px;
-    margin-left: -50px;
+    gap: 120px;
+    width: 100%;
+    margin-top: -10px;
 }
 
 .credit {
