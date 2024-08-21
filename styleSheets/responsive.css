@@ -1,147 +1,35 @@
 @media only screen and (max-width : 1224px) {
 
-    .footer {
-        gap: 5rem;
-        margin-top: 5rem;
+    .expert {
+        transform: translateX(100px);
     }
 
     .footer__main {
-        margin-top: 20%;
-    }
-
-    .header {
-        justify-content: center;
-    }
-
-    ;
-}
-
-@media only screen and (max-width : 1024px) {
-    /* body {
-        background-color: red;
-    } */
-
-    .header {
-        justify-content: center;
-        gap: 0;
-    }
-
-    .footer {
-        gap: 2rem;
-        margin-top: 0;
-    }
-
-    .about-us {
-        gap: 20px;
-    }
-
-    .footer__main {
-        margin-top: 30%;
-    }
-
-    .about-us {
-        width: 80vw;
-    }
-
-    ;
-}
-
-@media only screen and (max-width: 575.98px) {
-    .main-menu {
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 20px;
-        width: 100%;
-        z-index: 99;
-        background-color: #FF64AE;
-        color: #fff;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-    }
-
-    .main-menu>li>a {
-        color: #fff;
-    }
-
-    .main-slider__frame1 {
-        display: none
-    }
-
-    .box-section {
-        flex-direction: column;
-    }
-
-    .about-us {
-        flex-direction: column;
-    }
-
-    .title-and-des {
-        text-align: center
-    }
-
-    .contact-info__img {
-        display: none
-    }
-
-    .form .pink-button {
-        width: 100%;
-    }
-
-    .main-slider__intro .pink-button {
-        width: 100%;
-    }
-
-    .footer__bg {
-        display: none;
-    }
-
-    .footer__main {
-        color: #000;
-        flex-direction: column;
-        align-items: center;
-        gap: 5rem;
-    }
-
-    .footer-section {
-        width: 50%;
-    }
-
-    .header {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .footer__contact .main-logo {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .form {
-        grid-template-columns: 1fr;
-    }
-
-    .full-width {
-        grid-column: span 1;
+        gap: 10rem;
+        margin-left: 200px;
     }
 
     .extra {
-        justify-content: center;
-        width: 50%;
-        gap: 0;
-        flex-direction: column;
-        gap: 30px;
+        width: 100%;
+        margin-left: 200px;
     }
-
-    .social a {
-        color: #000;
-    }
-
-    .credit {
-        color: #000;
-    }
-
-
-    ;
 }
+
+@media only screen and (max-width : 1024px) {
+    .expert {
+        transform: translateX(200px);
+    }
+
+    .footer__main {
+        gap: 15rem;
+        margin-left: 200px;
+    }
+
+    .extra {
+        width: 100%;
+        margin-left: 200px;
+        gap: 220px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {}
